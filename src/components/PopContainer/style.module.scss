@@ -1,0 +1,33 @@
+.wrapper{
+  position: fixed;
+  z-index: 9997;
+}
+.mask{
+  z-index: 9998;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(0,0,0,0.85)
+}
+
+.content {
+  position: fixed;
+  box-sizing: border-box;
+  z-index: 9999;
+
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.top {
+  top: 60px;
+}
+.bottom{
+  bottom: 80px;
+}
+.middle{
+  top: 50%;
+}
+

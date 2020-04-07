@@ -1,0 +1,122 @@
+.actionSheet-animate-enter {
+  opacity: 0;
+  transform: translate3d(0, 200%, 0);
+}
+.actionSheet-animate-enter-active,
+.actionSheet-animate-enter-done {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition: opacity 500ms, transform 500ms ease;
+}
+.actionSheet-animate-exit {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+.actionSheet-animate-exit-active,
+.actionSheet-animate-exit-done {
+  opacity: 0;
+  transform: translate3d(0, 200%, 0);
+  transition: opacity 500ms, transform 500ms ease;
+}
+
+
+.alert-animate-enter {
+  opacity: 0;
+}
+.alert-animate-enter-active,
+.alert-animate-enter-done {
+  opacity: 1;
+  transition: opacity 500ms;
+}
+.alert-animate-exit {
+  opacity: 1;
+}
+.alert-animate-exit-active,
+.alert-animate-exit-done {
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
+
+.mask-animate-enter {
+  opacity: 0;
+}
+.mask-animate-enter-active,
+.mask-animate-enter-done {
+  opacity: 1;
+  transition: opacity 500ms;
+}
+.mask-animate-exit {
+  opacity: 1;
+}
+.mask-animate-exit-active,
+.mask-animate-exit-done {
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
+
+.popup-top-enter {
+  opacity: 0;
+  transform: translate3d(-50%, -200%, 0);
+}
+.popup-top-enter-active,
+.popup-top-enter-done {
+  opacity: 1;
+  transform: translate3d(-50%, -50%, 0);
+  transition: opacity 500ms, transform 500ms;
+}
+.popup-top-exit {
+  opacity: 1;
+  transform: translate3d(-50%, -50%, 0);
+}
+.popup-top-exit-active,
+.popup-top-exit-done {
+  opacity: 0;
+  transform: translate3d(-50%, -200%, 0);
+  transition: opacity 500ms, transform 500ms;
+}
+
+
+.popup-middle-enter {
+  opacity: 0;
+  transform: translate3d(-50%, -50%, 0);
+}
+.popup-middle-enter-active,
+.popup-middle-enter-done {
+  opacity: 1;
+  transform: translate3d(-50%, -50%, 0);
+  transition: opacity 500ms, transform 500ms;
+}
+.popup-middle-exit {
+  opacity: 1;
+  transform: translate3d(-50%, -50%, 0);
+}
+.popup-middle-exit-active,
+.popup-middle-exit-done {
+  opacity: 0;
+  transform: translate3d(-50%, -50%, 0);
+  transition: opacity 500ms, transform 500ms;
+}
+
+
+.popup-bottom-enter {
+  opacity: 0;
+  transform: translate3d(-50%, 200%, 0);
+}
+.popup-bottom-enter-active,
+.popup-bottom-enter-done {
+  opacity: 1;
+  transform: translate3d(-50%, -50%, 0);
+  transition: opacity 500ms, transform 500ms;
+}
+.popup-bottom-exit {
+  opacity: 1;
+  transform: translate3d(-50%, -50%, 0);
+}
+.popup-bottom-exit-active,
+.popup-bottom-exit-done {
+  opacity: 0;
+  transform: translate3d(-50%, 200%, 0);
+  transition: opacity 500ms, transform 500ms;
+}
