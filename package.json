@@ -34,7 +34,7 @@
     "swiper": "^5.3.6"
   },
   "devDependencies": {
-    "@jarzzzi/nidavel": "^1.0.4",
+    "@jarzzzi/nidavel": "^1.0.6",
     "typescript": "^3.8.3"
   }
 }
