@@ -70,7 +70,7 @@ export default (props: Props) => {
     })
 
     return () => swiper && swiper.destroy(true, true)
-  }, [children])
+  }, [children, paginationOptions, showScrollbar, swiperOptions, showPagination])
 
   const Slides = Array.isArray(children) 
     ? children.map((i, index) => (

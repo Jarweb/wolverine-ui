@@ -1,5 +1,5 @@
 import React, { useCallback, useRef, useEffect } from 'react'
-import { ContainerLoader } from '../Loader'
+import { ContainerIndicator } from '../Indicator'
 import quicklink from 'quicklink'
 import 'intersection-observer'
 
@@ -68,7 +68,7 @@ export default function Button (props: ButtonProps) {
 			>
 				{
 					loading 
-					? <ContainerLoader>{children}</ContainerLoader> 
+					? <ContainerIndicator>{children}</ContainerIndicator> 
 					: children
 				}
 			</a>
@@ -85,7 +85,7 @@ export default function Button (props: ButtonProps) {
 		>
 			{
 				loading
-					? <ContainerLoader>{children}</ContainerLoader>
+					? <ContainerIndicator>{children}</ContainerIndicator>
 					: children
 			}
 		</button>

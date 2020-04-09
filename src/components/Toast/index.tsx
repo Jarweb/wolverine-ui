@@ -4,7 +4,7 @@ import { createContainer, setRef, removeContainer} from '../PopContainer/dynamic
 import Container from './Container'
 import { NoticeOptions } from './Content'
 import style from './style.module.scss'
-import Loader from '../Loader/Loader'
+import Indicator from '../Indicator/Indicator'
 
 export const showNotice = (options: NoticeOptions) => {
   const container = createContainer()
@@ -45,7 +45,7 @@ export const showLoading = ({ text, icon, maskVisible, contentCls } : {
       <div>
         {
           icon && 
-          <div style={{ height: 45, minWidth: 75, paddingTop: 4 }}><Loader size="s" /></div>
+          <div style={{ height: 45, minWidth: 75, paddingTop: 4 }}><Indicator size="s" /></div>
         }
         {
           text &&

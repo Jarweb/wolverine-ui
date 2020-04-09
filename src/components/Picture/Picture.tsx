@@ -33,7 +33,7 @@ const useImage = (props: Props) => {
 		onClick && onClick(e, pic)
 	}, [onClick, pic])
 
-	const asyncLoad = () => {
+	const asyncLoad = useCallback(() => {
 		const img = new Image()
 		img.decoding = 'async'
 		img.src = pic
@@ -48,7 +48,7 @@ const useImage = (props: Props) => {
 		.catch(err => {
 			ref.current && ref.current.appendChild(img)
 		})
-	}
+	}, [alt, pic])
 
 	useEffect(() => {
 		if (lazy) {
@@ -72,7 +72,7 @@ const useImage = (props: Props) => {
 		else {
 			asyncLoad()
 		}
-	}, [lazy, pic, alt])
+	}, [lazy, pic, alt, asyncLoad])
 
 	return {
 		ref: ref,
