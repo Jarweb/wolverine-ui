@@ -34,7 +34,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-transition-group": "^4.3.0",
-    "swiper": "^5.3.6"
+    "swiper": "^6.5.1"
   },
   "devDependencies": {
     "@jarzzzi/nidavel": "^1.0.6",
